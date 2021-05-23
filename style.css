@@ -10,3 +10,36 @@
     background-image: linear-gradient(to top, #0ba360 0%, #3cba92 100%) !important;
     color: white;
 }
+
+.calc-optopns-list {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    flex-wrap: wrap;
+}
+
+.calc-options-items {
+    margin: 5px !important;
+}
+
+.card {
+    min-height: 135px;
+    cursor: pointer;
+    transition: 0.6s;
+}
+
+.btn-outline-danger {
+    background: #0ba360;
+    background-image: linear-gradient(to top, #0ba360 0%, #3cba92 100%) !important;
+    color: white;
+    border: 1px solid black !important;
+}
+
+.btn-outline-danger:hover {
+    background: white;
+    background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%) !important;
+    color: black;
+    border: 1px solid black !important;
+}

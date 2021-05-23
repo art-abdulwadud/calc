@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <meta property="og:title" content="Shape Calculater">
     <meta property="og:description" content="Offering tour packages for individuals or groups.">
     <meta property="og:image" content="./logo.jpeg">
@@ -12,24 +14,100 @@
     <title>Shape Calculater</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <nav class="navbar navbar-expand-lg navbar-light green-bg">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">Navbar</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-            </ul>
-          </div>
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-      </nav>
+    </nav>
+    <main>
+        <section class="calc-options">
+            <ul class="calc-optopns-list w-100">
+                <li class="calc-options-items">
+                    <div class="card" style="width: 18rem;">
+                        <div class="card-body">
+                            <h5 class="card-title">Area of Circle</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Find the area of a circle</h6>
+                            <div class="btn-group" role="group" aria-label="Basic outlined example">
+                                <button type="button" class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#area-circle">Area</button>
+                                <button type="button" class="btn btn-outline-danger">Radius</button>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="calc-options-items">
+                    <div class="card" style="width: 18rem;">
+                        <div class="card-body">
+                            <h5 class="card-title">Area of Rectangle</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Find the area of a rectangle</h6>
+                            <div class="btn-group" role="group" aria-label="Basic outlined example">
+                                <button type="button" class="btn btn-outline-danger">Area</button>
+                                <button type="button" class="btn btn-outline-danger">Length</button>
+                                <button type="button" class="btn btn-outline-danger">Height</button>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="calc-options-items">
+                    <div class="card" style="width: 18rem;">
+                        <div class="card-body">
+                            <h5 class="card-title">Area of Square</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Find the area of a square</h6>
+                            <div class="btn-group" role="group" aria-label="Basic outlined example">
+                                <button type="button" class="btn btn-outline-danger">Area</button>
+                                <button type="button" class="btn btn-outline-danger">Length</button>
+                                <button type="button" class="btn btn-outline-danger">Height</button>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </section>
+        <section class="modals">
+            <!-- Modal -->
+            <div class="modal fade" id="area-circle" tabindex="-1" aria-labelledby="areaCircle"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Calculate Area</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <form>
+                                <div class="input-group mb-3">
+                                  <span class="input-group-text" id="basic-addon1">Radius</span>
+                                  <input type="number" class="form-control" placeholder="Enter Radius" aria-label="radius" aria-describedby="basic-addon1">
+                                </div>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Calculate</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
     <main>
 
     </main>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+        crossorigin="anonymous"></script>
+
 </html>
